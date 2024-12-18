@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar Cotización</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navegación -->
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="portafolio.html">Portafolio</a></li>
+    <li><a href="empresas.html">Empresas</a></li>
+    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+    <li><a href="cotizacion.html">Solicitar Cotización</a></li>
+  </ul>
+</nav>
+
+<!-- Encabezado -->
+<header class="contact-header">
+  <h1>Contáctanos</h1>
+  <p>Reserva una reunión o solicita una cotización con nuestro equipo.</p>
+</header>
+
+<!-- Formulario -->
+<main class="form-container">
+  <form id="cotizacionForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+
+    <label for="producto">Producto o Servicio:</label>
+    <select id="producto" name="producto" required>
+      <option value="" disabled selected>Selecciona una categoría</option>
+      <option value="Tarjetas">Tarjetas</option>
+      <option value="Stickers">Stickers</option>
+      <option value="Desarrollo web y reportes">Desarrollo web y reportes</option>
+    </select>
+
+    <label for="mensaje">Mensaje adicional:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="30" placeholder="Detalles adicionales (opcional)"></textarea>
+
+    <button type="button" onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<!-- Pie de página -->
+<footer>
+  <p>&copy; 2024 [Nombre de la Empresa]. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
