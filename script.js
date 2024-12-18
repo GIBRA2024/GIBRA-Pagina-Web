@@ -26,3 +26,5 @@ function enviarWhatsApp() {
     // Redirigir al enlace
     window.open(enlace, "_blank");
 }
+
+
