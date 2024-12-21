@@ -13,39 +13,82 @@ body {
     overflow-x: hidden;
 }
 
-/* Navegación */
+/* Barra de navegación */
 .navbar {
-    background-color: #0072ff;
-    padding: 15px 20px;
-}
-
-.navbar ul {
     display: flex;
-    justify-content: center;
-    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #0a1927;
 }
 
-.navbar li {
-    margin: 0 15px;
+.logo {
+    margin: 0.2rem;
+    width: 5rem;
 }
 
-.navbar a {
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: #c8d3db;
 }
 
-.navbar a:hover {
-    color: #ffda79;
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
-/* Encabezados Generales */
+@media (max-width: 768px) {
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 2.5rem;
+        background-color: transparent;
+        color: #c8d3db;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0a1927;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+}
+
+
+
+
+    /* Encabezados Generales */
 header {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-    color: white;
+    background: linear-gradient(to right, #51697a, #2e4352);
+    color: #c8d3db;
 }
 
 header h1 {
@@ -62,8 +105,8 @@ header p {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background: #0072ff;
-    color: white;
+    background: #0a1927;
+    color: #c8d3db;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -166,12 +209,14 @@ header p {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     line-height: 1.8;
+    text-align: center;
 }
 
 .about-content h2 {
     font-size: 1.8rem;
     color: #0072ff;
     margin-bottom: 10px;
+
 }
 
 .about-content p {
@@ -319,8 +364,9 @@ form button:hover {
 }
 
 .service:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Más sombra al pasar el cursor */
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service img {
@@ -415,11 +461,6 @@ form button:hover {
 
     .about p {
         font-size: 1rem;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
     }
 
     .portfolio, .companies {
