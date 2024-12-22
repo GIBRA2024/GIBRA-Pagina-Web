@@ -1,82 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bienvenidos a [Nombre de la Empresa]</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a GIBRA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!-- Navegación -->
 <div class="navbar">
-  <img class="logo" src="Imagenes/Logo.png" alt="logo">
-  <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-  <nav id="nav" class="nav">
-    <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
-    <ul class="nav-list">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="portafolio.html">Portafolio</a></li>
-      <li><a href="empresas.html">Empresas</a></li>
-      <li><a href="quienes-somos.html">Quines somos</a></li>
-      <li><a href="cotizacion.html">Contacto</a></li>
-    </ul>
-  </nav>
+    <img class="logo" src="Imagenes/Logo.png" alt="logo">
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav id="nav" class="nav">
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="empresas.html">Clientes</a></li>
+            <li><a href="quienes-somos.html">Quines somos</a></li>
+            <li><a href="cotizacion.html">Contacto</a></li>
+        </ul>
+        <!-- Contenedor para redes sociales -->
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <i class="bi bi-instagram"></i> <!-- Icono de Instagram -->
+            </a>
+        </div>
+    </nav>
 </div>
 
 <!-- Encabezado -->
 <header class="hero">
-  <div class="container">
-    <h1>GIBRA</h1>
-    <p>Transformamos ideas en realidad: tarjetas personalizadas, stickers creativos y desarrollo web profesional.</p>
-    <a href="cotizacion.html" class="cta-button">Contáctanos</a>
-  </div>
+    <div class="container">
+        <h1>GIBRA</h1>
+        <p>Transformamos ideas en realidad: tarjetas personalizadas, stickers creativos y desarrollo web profesional.</p>
+        <a href="cotizacion.html" class="cta-button">Contáctanos</a>
+    </div>
 </header>
 
 <!-- Sobre Nosotros -->
 <section class="about">
-  <div class="container">
-    <h2>¿Quiénes Somos?</h2>
-    <p>Somos una empresa dedicada a ofrecer soluciones creativas y personalizadas en diseño de tarjetas, stickers y desarrollo web. Nuestro objetivo es ayudarte a destacar con productos de alta calidad y servicios profesionales.</p>
-    <a href="quienes-somos.html" class="link-button">Leer Más</a>
-  </div>
+    <div class="container">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos una empresa dedicada a ofrecer soluciones creativas y personalizadas en diseño de tarjetas, stickers y desarrollo web. Nuestro objetivo es ayudarte a destacar con productos de alta calidad y servicios profesionales.</p>
+        <a href="quienes-somos.html" class="link-button">Leer Más</a>
+    </div>
 </section>
 
 <!-- Servicios -->
 <section class="services">
-  <h2>Nuestros Servicios</h2>
-  <div class="services-grid">
-    <div class="service">
-      <img src="images/tarjetas.jpg" alt="Tarjetas">
-      <h3>Tarjetas</h3>
-      <p>Diseños únicos para cualquier ocasión.</p>
+    <h2>Nuestros Servicios</h2>
+    <div class="services-grid">
+        <div class="service">
+            <img src="images/tarjetas.jpg" alt="Tarjetas">
+            <h3>Tarjetas</h3>
+            <p>Diseños únicos para cualquier ocasión.</p>
+        </div>
+        <div class="service">
+            <img src="images/stickers.jpg" alt="Stickers">
+            <h3>Stickers</h3>
+            <p>Crea un impacto con pegatinas personalizadas.</p>
+        </div>
+        <div class="service">
+            <img src="images/desarrollo.jpg" alt="Desarrollo Web">
+            <h3>Desarrollo Web</h3>
+            <p>Páginas web modernas y reportes profesionales.</p>
+        </div>
     </div>
-    <div class="service">
-      <img src="images/stickers.jpg" alt="Stickers">
-      <h3>Stickers</h3>
-      <p>Crea un impacto con pegatinas personalizadas.</p>
-    </div>
-    <div class="service">
-      <img src="images/desarrollo.jpg" alt="Desarrollo Web">
-      <h3>Desarrollo Web</h3>
-      <p>Páginas web modernas y reportes profesionales.</p>
-    </div>
-  </div>
-  <a href="portafolio.html" class="link-button">Ver Portafolio</a>
+    <a href="portafolio.html" class="link-button">Ver Portafolio</a>
 </section>
 
 <!-- Llamado a la Acción -->
 <section class="cta">
-  <div class="container">
-    <h2>¿Listo para trabajar con nosotros?</h2>
-    <p>Solicita una cotización personalizada y haz realidad tus ideas.</p>
-    <a href="cotizacion.html" class="cta-button">Solicitar Cotización</a>
-  </div>
+    <div class="container">
+        <h2>¿Listo para trabajar con nosotros?</h2>
+        <p>Solicita una cotización personalizada y haz realidad tus ideas.</p>
+        <a href="cotizacion.html" class="cta-button">Solicitar Cotización</a>
+    </div>
 </section>
 
 <!-- Pie de página -->
 <footer>
-  <p>&copy; 2024 [Nombre de la Empresa]. Todos los derechos reservados.</p>
+    <p>&copy; 2024 GIBRA. Todos los derechos reservados.</p>
 </footer>
 <script src="script.js"></script>
 </body>
