@@ -40,6 +40,10 @@ abrir.addEventListener("click", () => {
     nav.classList.add("visible");
     body.classList.add('no-scroll');
     bloqueo.classList.add('bloqueo-activo');
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Suaviza el desplazamiento
+    });
 });
 
 cerrar.addEventListener("click", () => {

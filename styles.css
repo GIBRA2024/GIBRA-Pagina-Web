@@ -81,6 +81,18 @@ body {
     color: #ff6347; /* Color al pasar el ratón sobre el icono */
 }
 
+.bloqueo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0); /* Fondo transparente (puedes cambiarlo) */
+    z-index: 1000; /* Asegura que esté encima de todo */
+    pointer-events: none; /* No afecta interacciones cuando está oculto */
+    visibility: hidden; /* Inicialmente oculto */
+}
+
 @media (max-width: 768px) {
     .abrir-menu,
     .cerrar-menu{
@@ -123,17 +135,6 @@ body {
         height: 100vh;    /* Evita que el contenido crezca fuera del viewport */
     }
 
-    .bloqueo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0); /* Fondo transparente (puedes cambiarlo) */
-        z-index: 1000; /* Asegura que esté encima de todo */
-        pointer-events: none; /* No afecta interacciones cuando está oculto */
-        visibility: hidden; /* Inicialmente oculto */
-    }
 
     /* Mostrar la capa de bloqueo */
     .bloqueo-activo {
