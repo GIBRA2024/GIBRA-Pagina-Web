@@ -102,7 +102,7 @@ body {
 
 @media (max-width: 768px) {
     .abrir-menu,
-    .cerrar-menu{
+    .cerrar-menu {
         display: block;
         border: 0;
         font-size: 2.5rem;
@@ -110,7 +110,7 @@ body {
         color: #c8d3db;
     }
 
-    .nav{
+    .nav {
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -127,19 +127,19 @@ body {
         z-index: 1100;
     }
 
-    .nav.visible{
+    .nav.visible {
         opacity: 1;
         visibility: visible;
     }
 
-    .nav-list{
+    .nav-list {
         flex-direction: column;
         align-items: end;
     }
 
     .no-scroll {
         overflow: hidden; /* Desactiva el scroll */
-        height: 100vh;    /* Evita que el contenido crezca fuera del viewport */
+        height: 100vh; /* Evita que el contenido crezca fuera del viewport */
     }
 
 
@@ -534,6 +534,7 @@ form button:hover {
     background-color: #4a647a; /* Azul oscuro */
     color: #f9f9f9; /* Cambia el texto a blanco */
 }
+
 @media (max-width: 768px) {
     .cta h2 {
         font-size: 2rem;
@@ -656,10 +657,21 @@ button.next {
     border: 1px solid #ccc;
 }
 
-.colors .color.black { background: black; }
-.colors .color.red { background: red; }
-.colors .color.brown { background: brown; }
-.colors .color.white { background: white; }
+.colors .color.black {
+    background: black;
+}
+
+.colors .color.red {
+    background: red;
+}
+
+.colors .color.brown {
+    background: brown;
+}
+
+.colors .color.white {
+    background: white;
+}
 
 .sizes button, .add-to-cart, .buy-now {
     padding: 10px 20px;
