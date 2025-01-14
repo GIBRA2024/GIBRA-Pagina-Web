@@ -48,8 +48,7 @@ body {
     display: inline-block;
 }
 
-.abrir-menu,
-.cerrar-menu {
+.abrir-menu, .cerrar-menu {
     display: none;
     cursor: pointer;
 }
