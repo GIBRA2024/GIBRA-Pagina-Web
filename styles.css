@@ -337,6 +337,16 @@ footer {
     margin-top: 40px;
 }
 
+footer a {
+    color: #f9f9f9;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Formulario */
 .form-container {
     max-width: 500px;
@@ -382,6 +392,20 @@ form button {
 
 form button:hover {
     background-color: #005bb5;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+.checkbox-container {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkbox-container label {
+    font-size: 0.9rem;
 }
 
 /* Sección Sobre Nosotros */
@@ -561,10 +585,7 @@ form button:hover {
     }
 }
 
-.required {
-    color: red;
-    font-weight: bold;
-}
+
 
 /* productos */
 .contenedor {

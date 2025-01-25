@@ -17,7 +17,7 @@
         <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
         <ul class="nav-list">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="portafolio/">Portafolio</a></li>
             <li><a href="empresas.html">Clientes</a></li>
             <li><a href="quienes-somos.html">Quines somos</a></li>
             <li><a href="cotizacion.html" class="active">Contacto</a></li>
@@ -62,12 +62,27 @@
         <label for="mensaje">Mensaje adicional:</label>
         <textarea id="mensaje" name="mensaje" rows="4" cols="30" placeholder="Detalles adicionales"></textarea>
 
+        <!-- Checkbox de aceptación de datos -->
+
+        <label for="aceptarDatos" style="display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;">
+            <input type="checkbox" id="aceptarDatos" name="aceptarDatos" required>
+            Acepto el <a href="/politica-de-privacidad" target="_blank">tratamiento de mis datos personales</a>.
+        </label>
+
+
+
+
         <button type="button" onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
     </form>
 </main>
 <!-- Pie de página -->
 <footer>
     <p>&copy; 2024 GIBRA. Todos los derechos reservados.</p>
+    <p>
+        <a href="/politica-de-privacidad" target="_blank">Política de Privacidad</a> |
+        <a href="/terminos-y-condiciones" target="_blank">Términos y Condiciones</a> |
+        <a href="/aviso-legal" target="_blank">Aviso Legal</a>
+    </p>
 </footer>
 <script src="scriptFormulario.js"></script>
 <script src="script.js"></script>
