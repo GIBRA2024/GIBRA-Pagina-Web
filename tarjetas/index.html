@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - GIBRA</title>
+    <title>Tarjetas NFC - GIBRA</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="tarjetas.css">
 </head>
 <body>
 <!-- Navegación -->
@@ -17,7 +18,7 @@
         <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
         <ul class="nav-list">
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="index.html" class="active">Portafolio</a></li>
+            <li><a href="/portafolio" class="active">Portafolio</a></li>
             <li><a href="../empresas.html">Clientes</a></li>
             <li><a href="../quienes-somos.html">Quines somos</a></li>
             <li><a href="../cotizacion.html">Contacto</a></li>
@@ -33,32 +34,23 @@
 
 <!-- Encabezado -->
 <header class="portfolio-header">
-    <h1>Portafolio</h1>
-    <p>Descubre nuestras categorías de productos y servicios.</p>
+    <h1>Tarjetas NFC</h1>
+    <p>Descubre nuestras tarejtas NFC y sus increibles diseños</p>
 </header>
 
 <!-- Categorías -->
-<section class="portfolio">
-    <div class="portfolio-item">
-        <img src="../Imagenes/LogoMinimalista.png" alt="Tarjetas">
-        <h2>Tarjetas</h2>
-        <p>Diseños únicos y personalizables para cualquier ocasión.</p>
-        <a href="../cotizacion.html" class="cta-button">Solicitar Cotización</a>
-        <a href="/tarjetas" class="cta-button">Más información</a>
-    </div>
-    <div class="portfolio-item">
+<section class="tarjetas">
+    <a href="../cotizacion.html" class="tarjeta">
+        <div class="tarjeta-item">
+            <img src="../Imagenes/Propuesta%20Will%20_page-0001.jpg" alt="Tarjetas">
+            <img src="../Imagenes/Propuesta%20Will%20_page-0002.jpg" alt="Tarjetas">
+        </div>
+    </a>
+    <div class="tarjeta-item">
         <img src="images/stickers.jpg" alt="Stickers">
-        <h2>Stickers</h2>
-        <p>Crea un impacto con pegatinas originales y de alta calidad.</p>
-        <a href="../cotizacion.html" class="cta-button">Solicitar Cotización</a>
-        <a href="" class="cta-button">Más información</a>
     </div>
-    <div class="portfolio-item">
+    <div class="tarjeta-item">
         <img src="images/desarrollo.jpg" alt="Desarrollo Web">
-        <h2>Desarrollo Web</h2>
-        <p>Páginas web modernas y reportes personalizados para tu negocio.</p>
-        <a href="../cotizacion.html" class="cta-button">Solicitar Cotización</a>
-        <a href="../productoDesarrolloWeb.html" class="cta-button">Más información</a>
     </div>
 </section>
 

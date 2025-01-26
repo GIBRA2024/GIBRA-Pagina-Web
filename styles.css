@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
 }
 
+
 /* Barra de navegación */
 .titulo {
     font-size: 2rem; /* Ajusta el tamaño del título según sea necesario */
@@ -336,6 +337,12 @@ footer {
     color: #f9f9f9;
     font-size: 0.9rem;
     margin-top: 40px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #f9f9f9;
 }
 
 /* Formulario */
@@ -349,6 +356,7 @@ footer {
 }
 
 form label {
+    color: #0a1927;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
@@ -382,7 +390,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #005bb5;
+    background-color: #204e6a;
 }
 
 /* Sección Sobre Nosotros */
@@ -440,7 +448,7 @@ form button:hover {
 }
 
 .services-grid {
-    display: block;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-bottom: 30px;
