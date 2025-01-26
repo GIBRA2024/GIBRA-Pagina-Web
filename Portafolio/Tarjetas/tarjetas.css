@@ -33,4 +33,14 @@
     .tarjetas {
         grid-template-columns: 1fr;
     }
+
+    .aceptar {
+        flex-wrap: wrap; /* Permite que el texto baje si es necesario */
+        gap: 0.3rem; /* Reduce el espacio entre elementos */
+    }
+
+    .aceptar input {
+        margin-right: 0.3rem; /* Ajusta espacio del checkbox */
+    }
+
 }
