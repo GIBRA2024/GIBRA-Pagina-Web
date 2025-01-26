@@ -413,6 +413,10 @@ form button:hover {
     color: #0056b3; /* Color al pasar el ratón */
 }
 
+#aceptarDatos {
+    width: 20px;
+}
+
 /* Sección Sobre Nosotros */
 .about {
     background-color: #f9f9f9; /* Fondo claro */
