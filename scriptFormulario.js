@@ -2,9 +2,15 @@ function enviarWhatsApp() {
     // Obtener los valores del formulario
     const nombre = document.getElementById("nombre").value;
     const telefono = document.getElementById("telefono").value;
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("correo").value;
     const producto = document.getElementById("producto").value;
     const mensajeAdicional = document.getElementById("mensaje").value;
+    const checkbox = document.getElementById("aceptarDatos");
+
+    if (!checkbox.checked) {
+        alert("Por favor acepta las políticas de tratamiento de datos")
+        return;
+    }
 
     // Validar que los campos obligatorios estén completos
     if (!nombre || !telefono || !producto) {
