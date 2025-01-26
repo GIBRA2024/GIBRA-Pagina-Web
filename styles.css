@@ -393,6 +393,26 @@ form button:hover {
     background-color: #204e6a;
 }
 
+.aceptar {
+    display: flex;
+    align-items: center; /* Alinea el contenido verticalmente al centro */
+    gap: 0.3rem;
+    white-space: nowrap;
+}
+
+.aceptar input {
+    margin: 0; /* Elimina márgenes innecesarios del checkbox */
+}
+
+.aceptar a {
+    color: #007BFF; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.aceptar a:hover {
+    color: #0056b3; /* Color al pasar el ratón */
+}
+
 /* Sección Sobre Nosotros */
 .about {
     background-color: #f9f9f9; /* Fondo claro */
