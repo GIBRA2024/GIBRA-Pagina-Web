@@ -494,8 +494,8 @@ form button:hover {
 }
 
 .service img {
-    width: auto;
-    height: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
