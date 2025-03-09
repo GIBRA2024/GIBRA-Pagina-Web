@@ -19,7 +19,7 @@ function enviarWhatsApp() {
     }
 
     // Número de WhatsApp donde se enviará (formato internacional, sin '+')
-    const numeroDestino = "573225725739"; // Cambia esto al número de tu negocio.
+    const numeroDestino = "573209891782"; // Cambia esto al número de tu negocio.
 
     // Construir el mensaje
     const mensajeCompleto = `Hola, mi nombre es ${nombre}. Mi teléfono es ${telefono}. Mi correo es ${email}. Estoy interesado en el producto o servicio: ${producto}. ${mensajeAdicional ? "Detalles adicionales: " + mensajeAdicional : ""}`;
