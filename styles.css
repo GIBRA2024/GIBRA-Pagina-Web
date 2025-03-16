@@ -233,6 +233,13 @@ header p {
     margin-bottom: 15px;
 }
 
+.portfolio-item .img2 {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 .portfolio-item h2 {
     font-size: 1.5rem;
     color: #0a1927;
@@ -495,6 +502,13 @@ form button:hover {
 
 .service img {
     width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service .img2 {
+    width: 40%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
