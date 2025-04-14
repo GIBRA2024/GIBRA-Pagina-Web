@@ -37,4 +37,9 @@
     .tarjetas {
         grid-template-columns: 1fr;
     }
+
+    .tarjeta-item {
+        display: block;
+        height: auto;
+    }
 }

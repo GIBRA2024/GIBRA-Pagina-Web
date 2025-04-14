@@ -33,4 +33,14 @@
     .tarjetas {
         grid-template-columns: 1fr;
     }
+
+    .tarjeta-item {
+        margin: 20px;
+        text-align: center;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 }
